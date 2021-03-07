@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { UtilitiesModule } from './utilities/utilities.module'
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +12,7 @@ console.log(`jQuery version: ${$.fn.jquery}`);
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, UtilitiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

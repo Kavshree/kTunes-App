@@ -7,11 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kTunes';
-  status: boolean = false;
+  status;
+  toggleMenuEvent(e) {
+    this.status=e;
+  }
+  /*status: boolean = false;
   toggleMenu(e) {
     e.preventDefault();
     this.status = !this.status;
-  }
+  }*/
   
   
 }
