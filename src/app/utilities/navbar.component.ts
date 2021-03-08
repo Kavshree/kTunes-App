@@ -2,7 +2,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'navbar',
-    template:  `<nav class="navbar navbar-expand-lg border-bottom">  
+    template:  `<nav class="navbar navbar-expand-lg navbar-dark">  
     <button class="btn btn-secondary" id="menu-toggle" (click)="toggleMenu($event)"><i [ngClass]="status ? 'fa fa-chevron-circle-left' : 'fa fa-chevron-circle-right' "></i></button>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

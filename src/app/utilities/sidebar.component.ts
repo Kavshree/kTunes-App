@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'sidebar',
-    template:  `<div class="border-right" id="sidebar-wrapper">
+    template:  `<div id="sidebar-wrapper">
     <div class="sidebar-heading text-center"><a href="#"><i class="fa fa-music" aria-hidden="true"></i> </a> kTunes</div>
     <div class="list-group list-group-flush">
       <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
@@ -12,7 +12,11 @@ import { Component, Input } from '@angular/core';
       <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-plus-circle" aria-hidden="true"></i> New Playlist</a>
       <a href="#" class="list-group-item list-group-item-action">Status</a>
     </div>
-  </div>`
+  </div>`,
+  styles: [`
+    #sidebar-wrapper .list-group-item {background-color: transparent;border:none;border-left:5px solid transparent;}
+    #sidebar-wrapper .list-group-item:hover{border-left:5px solid #00bc8c;}
+  `]
 })
 
 export class SidebarComponent {

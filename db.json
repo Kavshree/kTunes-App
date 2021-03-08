@@ -1,0 +1,347 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+
+  "categories": [{
+    "categoryId": "CAT1",
+    "categoryType": "Sound Track Your Home",
+    "categoryList": [{
+    "categoryListID":"PC1",
+    "categoryName":"Pop All Day", 
+    "categoryDescription": "Keep up with all the latest pop hits. Cover: Zara Larsson",
+    "categoryFollowers": 2726
+    },{
+    "categoryListID":"PC2",
+    "categoryName":"Hits in Your Country", 
+    "categoryDescription": "Chart toppers and fresh hits this week. Cover: Tate McRae",
+    "categoryFollowers": 4545
+    },{
+    "categoryListID":"PC3",
+    "categoryName":"Mood Booster", 
+    "categoryDescription": "Get Happy with a dose of feel-good songs",
+    "categoryFollowers": 4344
+    },{
+    "categoryListID":"PC4",
+    "categoryName":"Stay in the Know", 
+    "categoryDescription": "Smart Engaging podcasts that go beyond the headlines",
+    "categoryFollowers": 898
+    }]
+  },{
+    "categoryId": "CAT2",
+    "categoryType": "Mood",
+    "categoryList": [{
+    "categoryListID":"PC5",
+    "categoryName":"Happy Hits", 
+    "categoryDescription": "Hits to boost your mood and fill you with happiness!",
+    "categoryFollowers": 4764
+    },{
+    "categoryListID":"PC6",
+    "categoryName":"my life is a movie", 
+    "categoryDescription": "Every main character needs their sound track",
+    "categoryFollowers": 67676
+    },{
+    "categoryListID":"PC7",
+    "categoryName":"Feeling Myself", 
+    "categoryDescription": "You are on top of the world dont forget it",
+    "categoryFollowers": 249
+    },{
+    "categoryListID":"PC8",
+    "categoryName":"Your favorite Coffeehouse", 
+    "categoryDescription": "Curl up in your favorite spot with some sweet and mellow tunes",
+    "categoryFollowers": 343
+    }]
+  },{
+    "categoryId": "CAT3",
+    "categoryType": "Calm and Focused",
+    "categoryList": [{
+    "categoryListID":"PC9",
+    "categoryName":"Tranquility", 
+    "categoryDescription": "Relax and escape with these tranquil tracks",
+    "categoryFollowers": 556
+    },{
+    "categoryListID":"PC10",
+    "categoryName":"Creative Focus", 
+    "categoryDescription": "Get your creative juices flowing with these instrumental masterpieces",
+    "categoryFollowers": 89898
+    },{
+    "categoryListID":"PC11",
+    "categoryName":"Relax", 
+    "categoryDescription": "Gentle instrumental music",
+    "categoryFollowers": 6565
+    },{
+    "categoryListID":"PC12",
+    "categoryName":"Chilled Instrumental", 
+    "categoryDescription": "Chilled Instrumental favorites",
+    "categoryFollowers": 767
+    }]
+  },{
+    "categoryId": "CAT4",
+    "categoryType": "Classical Study",
+    "categoryList": [{
+    "categoryListID":"PC13",
+    "categoryName":"Atmospheric Piano", 
+    "categoryDescription": "Atmospheric piano pieces",
+    "categoryFollowers": 454
+    },{
+    "categoryListID":"PC14",
+    "categoryName":"Calming Classical", 
+    "categoryDescription": "The most calming classical music",
+    "categoryFollowers": 8787
+    },{
+    "categoryListID":"PC15",
+    "categoryName":"Soft Instrumental", 
+    "categoryDescription": "Gentle instrumental tunes",
+    "categoryFollowers": 232
+    },{
+    "categoryListID":"PC16",
+    "categoryName":"Beethoven Relax", 
+    "categoryDescription": "Explore the softer side of Beethoven with this selection of calming favorites",
+    "categoryFollowers": 668
+    }]
+  }],
+  "playlist":[{
+    "playlistCategoryID": "PC1",
+    "playlistName":"Pop All Day",
+    "playListSongs":[{
+      "title": "Need Someone",
+      "artist": "Zara Larrson",
+      "album": "Poster Girl"
+    },{
+      "title": "Need Someone",
+      "artist": "Zara Larrson",
+      "album": "Poster Girl"
+    },{
+      "title": "Need Someone",
+      "artist": "Zara Larrson",
+      "album": "Poster Girl"
+    },{
+      "title": "Need Someone",
+      "artist": "Zara Larrson",
+      "album": "Poster Girl"
+    }]
+    },
+    {
+    "playlistCategoryID": "PC2",
+    "playlistName":"Hits in Your Country",
+    "playListSongs":[{
+      "title": "Whats next",
+      "artist": "Drake",
+      "album": "Scary House 2"
+    },{
+      "title": "Slower",
+      "artist": "Tate McRAe",
+      "album": "slower"
+    },{
+      "title": "Blue",
+      "artist": "Madison Beer",
+      "album": "LIfe support"
+    },{
+      "title": "Fly Away",
+      "artist": "Tones and I",
+      "album": "Fly Away"
+    }]
+    },{
+    "playlistCategoryID": "PC3",
+    "playlistName":"Mood Booster",
+    "playListSongs":[{
+      "title": "Your Man",
+      "artist": "Joji",
+      "album": "Nectar"
+    },{
+      "title": "Take it easy",
+      "artist": "Zara Larrson",
+      "album": "Poster Girl"
+    },{
+      "title": "On Me",
+      "artist": "Thomas Rehtt",
+      "album": "SCOOB"
+    },{
+      "title": "Save Your Tears",
+      "artist": "The Weekend",
+      "album": "After Hours"
+    }]
+    },{
+    "playlistCategoryID": "PC4",
+    "playlistName":"Stay in the Know",
+    "playListSongs":[{
+      "title": "Two Americans Collide",
+      "artist": "Zara Larrson",
+      "album": "Poste Reports"
+    },{
+      "title": "Trump and the Economy",
+      "artist": "Zara Larrson",
+      "album": "Can he do that?"
+    }]
+    },{
+    "playlistCategoryID": "PC5",
+    "playlistName":"Happy Hits",
+    "playListSongs":[{
+      "title": "We are Young",
+      "artist": "Sound Waves",
+      "album": "We are Young"
+    },{
+      "title": "Fireworks",
+      "artist": "ZPurple Disco",
+      "album": "Fireworks"
+    }]
+    },{
+    "playlistCategoryID": "PC6",
+    "playlistName":"my life is a movie",
+    "playListSongs":[{
+      "title": "Why",
+      "artist": "Dominic Fike",
+      "album": "What could possibly happen"
+    },{
+      "title": "First",
+      "artist": "Cold war kids",
+      "album": "Hold My Home"
+    }]
+    },{
+    "playlistCategoryID": "PC7",
+    "playlistName":"Feeling Myself",
+    "playListSongs":[{
+      "title": "Good Days",
+      "artist": "SZA",
+      "album": "Good Days"
+    },{
+      "title": "May I",
+      "artist": "Flo Milli",
+      "album": "Cant Be"
+    }]
+    },{
+    "playlistCategoryID": "PC8",
+    "playlistName":"Your favorite Coffeehouse",
+    "playListSongs":[{
+      "title": "Front Porch",
+      "artist": "Joy Williams",
+      "album": "Front Porch"
+    },{
+      "title": "Brave",
+      "artist": "Rusten",
+      "album": "Brave"
+    },{
+      "title": "Square one",
+      "artist": "Camp",
+      "album": "Square one"
+    }]
+    },{
+    "playlistCategoryID": "PC9",
+    "playlistName":"Tranquility",
+    "playListSongs":[{
+      "title": "Fracture",
+      "artist": "Stephan",
+      "album": "Fracture"
+    },{
+      "title": "Filma Slo",
+      "artist": "Gabriel",
+      "album": "Piano Works"
+    }]
+    },{
+    "playlistCategoryID": "PC10",
+    "playlistName":"Creative Focus",
+    "playListSongs":[{
+      "title": "Fantasia in D minor",
+      "artist": "Wolfgang",
+      "album": "Mozart"
+    },{
+      "title": "String Quartret No. 21",
+      "artist": "Wolfgang",
+      "album": "Mozart"
+    }]
+    },{
+    "playlistCategoryID": "PC11",
+    "playlistName":"Relax",
+    "playListSongs":[{
+      "title": "Whitby",
+      "artist": "Stephan Moccio",
+      "album": "Whitby"
+    },{
+      "title": "Enigma",
+      "artist": "Hugar",
+      "album": "Enigma"
+    },{
+      "title": "Brotin",
+      "artist": "Eydis",
+      "album": "Brotin"
+    },{
+      "title": "Amble",
+      "artist": "Charlie",
+      "album": "Amble"
+    }]
+    },{
+    "playlistCategoryID": "PC12",
+    "playlistName":"Chilled Instrumental",
+    "playListSongs":[{
+      "title": "Untitled Needs",
+      "artist": "Laurence Guy",
+      "album": "Untitled Needs"
+    },{
+      "title": "Take a Nreak",
+      "artist": "Spotify",
+      "album": "Chilled Instrumental"
+    }]
+    },{
+    "playlistCategoryID": "PC13",
+    "playlistName":"Atmospheric Piano",
+    "playListSongs":[{
+      "title": "A Shimmer",
+      "artist": "Nilis Frahm",
+      "album": "Empty"
+    },{
+      "title": "In the waiting",
+      "artist": "Chad Lawson",
+      "album": "Yoy Finally Knew"
+    }]
+    },{
+    "playlistCategoryID": "PC14",
+    "playlistName":"Calming Classical",
+    "playListSongs":[{
+      "title": "A Gift",
+      "artist": "Rachel Portman",
+      "album": "Ask the River"
+    },{
+      "title": "Transience",
+      "artist": "Edvard",
+      "album": "Transience"
+    }]
+    },{
+    "playlistCategoryID": "PC15",
+    "playlistName":"Soft Instrumental",
+    "playListSongs":[{
+      "title": "Inventing Light",
+      "artist": "Jeff Martins",
+      "album": "Inventing Light"
+    },{
+      "title": "When Orange is the sky",
+      "artist": "Fabizio",
+      "album": "When Orange is the sky"
+    }]
+    },{
+    "playlistCategoryID": "PC16",
+    "playlistName":"Beethoven Relax",
+    "playListSongs":[{
+      "title": "Beethoven: Srting Quartret No. 34",
+      "artist": "LudWig and van Beethoven",
+      "album": "Beethoven: Srting Quartret"
+    },{
+      "title": "Cello Sonatoa No. 5 in D Major",
+      "artist": "LudWig and van Beethoven",
+      "album": "Beethoven: Srting Quartret"
+    }]
+    }]
+}

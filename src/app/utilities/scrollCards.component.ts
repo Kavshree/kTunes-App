@@ -21,7 +21,7 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
   
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+            <img class="img-responsive" src="http://placehold.it/250" alt="">
             <div class="overlay">
                <p class="info cursor-pointer">
                 <i class="fa fa-heart-o fa-2x col-lg-2" label="add to playlist"></i>
@@ -131,13 +131,13 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
   font-weight: normal;
   margin: 7px;
-  height: 93%;
-  width: 96%;
+  height: 94%;
+  width: 94%;
 }
 
 .hovereffect:hover p.info {
   opacity: 1;
-  line-height: 11;
+  line-height: 15;
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -147,6 +147,8 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 .hovereffect p.info:hover {
   box-shadow: 0 0 5px #fff;
 }
+
+.overlay .info i{margin: 15px;}
 
   
   `]
