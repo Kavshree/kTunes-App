@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, QueryList, ViewChildren } from '@angular/core';
+import { ScrollCards } from './utilities/scrollCards.component';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kTunes';
-  status;
+  status;  views=[1,2,3]
   toggleMenuEvent(e) {
     this.status=e;
   }
-  /*status: boolean = false;
-  toggleMenu(e) {
-    e.preventDefault();
-    this.status = !this.status;
-  }*/
+  @ViewChildren('cmp') components:QueryList<ScrollCards>;
+
+ngAfterViewInit(){
+    // print array of CustomComponent objects
+    console.log(this.components.toArray());
+}
   
   
 }
