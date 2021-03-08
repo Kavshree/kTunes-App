@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
     selector: 'scroll-cards',
@@ -15,14 +15,30 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
     </div>
     
     <div class="outer" id="content" #contentRef>
-    <div class="inner" style="background:red"></div>
-    <div class="inner" style="background:green"></div>
-    <div class="inner" style="background:blue"></div>
-    <div class="inner" style="background:yellow"></div>
-    <div class="inner" style="background:orange"></div>
+    <div *ngFor="let i of InnerCards">
+    <div class="inner">
+        
+  
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+            <div class="overlay">
+               <p class="info cursor-pointer">
+                <i class="fa fa-heart-o fa-2x col-lg-2" label="add to playlist"></i>
+                <i class="fa fa-play fa-2x col-lg-2" label="play"></i>
+                <i class="fa fa-circle col-lg-2" label="More.."></i>
+               </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    </div>
     
-    
-  </div>
+    </div>
   `,
   styles: [`
   .outer {
@@ -32,15 +48,113 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   }
   .inner {
     flex: 0 0 25%;
-    height: 100px;
+    
     margin:10px;
   }
   #left-btn, #right-btn{padding:5px;cursor:pointer}
+  
+
+  .col-big{
+    position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width:20%;
+}
+
+.cursor-pointer i{cursor: pointer}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(75,75,75,0.7);
+
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  margin:0px;
+}
+
+.hovereffect p.info {
+  display: block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+
+  font-weight: normal;
+  margin: 7px;
+  height: 93%;
+  width: 96%;
+}
+
+.hovereffect:hover p.info {
+  opacity: 1;
+  line-height: 11;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect p.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+  
   `]
 })
 
 export class ScrollCards {
-    content;
+    content; 
+    @Input() InnerCards = ["card1","card2","card3","card4"]
     @ViewChild('contentRef') contentRef: ElementRef;
     ngAfterViewInit() {
         this.content = this.contentRef.nativeElement as HTMLElement;
